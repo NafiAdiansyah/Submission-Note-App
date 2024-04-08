@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+body{
+    background-image: linear-gradient(to right, #B3C8CF, #BED7DC);
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.app-bar{
+    padding-bottom:20px;
+}
+.noteDetail {
+    display: block;
+    overflow: hidden;
+}
+.noteDetail p {
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.noteDetail span {
+    font-size: 15px;
+    color: #666;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+.note-actions {
+    position: absolute;
+    right: 1px;
+    gap: 5px;
+    align-self: flex-end;
+}
+.material-symbols-outlined{
+    font-size: 40px;
+}
+.note-actions button{
+    
+    border: none;
+    cursor: pointer;
+    color:aliceblue;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right:3px;
+    background-color: rgb(131, 139, 91);
+}
+
+
+.bottom-content span {
+    font-size: 14px;
+}
+
+.note-actions button.button-archive:hover {
+    background-color:rgb(235, 235, 37);
+    color: #000000;
+}
+
+.note-actions button.button-delete:hover {
+    color: black;
+    background-color: red;
+}
+
+.note-actions button:hover {
+    transform: scale(1.1); 
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#simpan-edit {
+    background-color: #628591;
+    color: #E5DDC5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#tanggal {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tambah-catatan {
+    background-color: #628591;
+    color: #E5DDC5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E5DDC5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    max-width: 400px;
+}
+
+.delete-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E5DDC5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    max-width: 400px;
+    overflow: auto;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#hapus-catatan {
+    background-color: #628591;
+    color: #E5DDC5;
+    border:1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 230px;
+}
+
+#batal-hapus {
+    background-color: #628591;
+    color: #E5DDC5;
+    border: 1px solid#E5DDC5;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.custom-footer{
+    padding: 20px;
+    color:#F2EFE5;
+    background-color: #B4B4B8;
+    text-align: center;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+}
